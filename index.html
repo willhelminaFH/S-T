@@ -1,0 +1,23 @@
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script> 
+	<script src="StoT.js"></script>
+</head>
+<body onload="initStoT()">
+		<button onclick="record()" id="b1" type="button">Start
+		</button>
+		<button onclick="stop()" id="b2" type="button">Stop
+		</button>
+		<p id="resTxt">result content here</p>
+		<p></p>
+		<p id="tmpTxt">temp results here</p>
+
+		<form id="idfrm">
+		  <label for="idfld">Session Id:</label>
+		  <input id="idfld" type="text" name="name">
+		  <button onclick="subId(($('#idfld').value)" id="subReg" type="button">Submit</button> 
+		</form>
+
+</body>
